@@ -1,3 +1,7 @@
+import 'dart:io';
+
 void main() {
-  print("Hello World"); //auto new line เสมอ (println)
+  stdout.writeln('Please enter your name');
+  String? name = stdin.readLineSync();
+  print("Hello $name"); //auto new line เสมอ (println)
 }
